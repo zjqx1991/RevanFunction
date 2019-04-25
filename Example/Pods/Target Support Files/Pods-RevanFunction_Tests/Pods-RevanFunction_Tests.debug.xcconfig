@@ -1,6 +1,7 @@
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/RevanFunction" "${PODS_CONFIGURATION_BUILD_DIR}/RevanKits" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/RevanFunction/RevanFunction.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/RevanKits/RevanKits.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "QuartzCore" -framework "RevanFunction" -framework "RevanKits" -framework "SVProgressHUD"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

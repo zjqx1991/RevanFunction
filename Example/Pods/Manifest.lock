@@ -1,26 +1,26 @@
 PODS:
-  - RevanFunction (0.1.0):
-    - RevanFunction/RevanCountDown (= 0.1.0)
-    - RevanFunction/RevanDB (= 0.1.0)
-    - RevanFunction/RevanDownLoader (= 0.1.0)
-    - RevanFunction/RevanPlayer (= 0.1.0)
-    - RevanFunction/RevanQRCode (= 0.1.0)
-    - RevanFunction/RevanSegment (= 0.1.0)
-    - RevanFunction/RevanSnapshot (= 0.1.0)
-    - RevanFunction/RevanTipsView (= 0.1.0)
-    - RevanFunction/RevanVerifyButton (= 0.1.0)
-  - RevanFunction/RevanCountDown (0.1.0)
-  - RevanFunction/RevanDB (0.1.0)
-  - RevanFunction/RevanDownLoader (0.1.0)
-  - RevanFunction/RevanPlayer (0.1.0)
-  - RevanFunction/RevanQRCode (0.1.0):
+  - RevanFunction (0.1.2):
+    - RevanFunction/RevanCountDown (= 0.1.2)
+    - RevanFunction/RevanDB (= 0.1.2)
+    - RevanFunction/RevanDownLoader (= 0.1.2)
+    - RevanFunction/RevanPlayer (= 0.1.2)
+    - RevanFunction/RevanQRCode (= 0.1.2)
+    - RevanFunction/RevanSegment (= 0.1.2)
+    - RevanFunction/RevanSnapshot (= 0.1.2)
+    - RevanFunction/RevanTipsView (= 0.1.2)
+    - RevanFunction/RevanVerifyButton (= 0.1.2)
+  - RevanFunction/RevanCountDown (0.1.2)
+  - RevanFunction/RevanDB (0.1.2)
+  - RevanFunction/RevanDownLoader (0.1.2)
+  - RevanFunction/RevanPlayer (0.1.2)
+  - RevanFunction/RevanQRCode (0.1.2):
     - RevanKits/Category
-  - RevanFunction/RevanSegment (0.1.0)
-  - RevanFunction/RevanSnapshot (0.1.0)
-  - RevanFunction/RevanTipsView (0.1.0):
+  - RevanFunction/RevanSegment (0.1.2)
+  - RevanFunction/RevanSnapshot (0.1.2)
+  - RevanFunction/RevanTipsView (0.1.2):
     - RevanKits/Category
     - SVProgressHUD (~> 2.2.5)
-  - RevanFunction/RevanVerifyButton (0.1.0):
+  - RevanFunction/RevanVerifyButton (0.1.2):
     - RevanFunction/RevanCountDown
   - RevanKits/Category (2.0.8)
   - SVProgressHUD (2.2.5)
@@ -38,10 +38,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RevanFunction: 75c41a13da9c4852673de93468404a833993a00b
+  RevanFunction: 82cc11dc87caa6666d164b7a7a25986e4fe4a03f
   RevanKits: 462dfb24c9b32ea424365c4b55a370e1f530432d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: aab65c9a74a1dcdebca7cbe0334afe4b00e397df
 
-COCOAPODS: 1.7.0.beta.3
+COCOAPODS: 1.6.1

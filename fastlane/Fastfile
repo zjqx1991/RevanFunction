@@ -1,0 +1,67 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+
+  desc "Description of what the lane does"
+  lane :RevanFunction_lane do |options|
+
+  #外界传入参数
+  tagName = options[:tag]	
+  targetName = options[:target]
+  messageName = options[:msg]
+
+  #0、git pull
+  git_pull
+  
+  #1、pod install
+  cocoapods(
+	  clean: true,
+	  podfile: "./Example/Podfile"
+  )
+
+  #2、git add .
+  git_add(path: ".")
+
+  #3、git commit -m "升级描述"
+  git_commit(path: ".", message: messageName)
+
+  #4、pod lib lint
+  pod_lib_lint(verbose: true, use_libraries: true, allow_warnings: true)
+
+  #5、git push origin master
+  push_to_git_remote
+
+  # 验证tag是否存在,如果存在, 应该删除本地标签和远程标签
+  #if 判断标签是否存在
+  #    执行删除本地/远程标签
+  #end
+  if git_tag_exists(tag: tagName)
+    UI.message("发现tag: #{tagName}已经存在，即将执行，删除命令 🚀")
+    git_remove_tag(tag: tagName)
+  end
+
+  #6、git tag
+  add_git_tag(
+	tag: tagName
+  )
+
+  #7、git push --tags
+  push_git_tags
+
+  #8、pod repo push XXXX xxx.podspec
+  pod_push(path: "#{targetName}.podspec", repo: "Specs", verbose: true, use_libraries: true, allow_warnings: true)
+
+  end
+
