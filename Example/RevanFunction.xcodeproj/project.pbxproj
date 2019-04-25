@@ -63,10 +63,10 @@
 		9F33C3B69D0EDC02E40927AF /* Pods-RevanFunction_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevanFunction_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RevanFunction_Tests/Pods-RevanFunction_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D60D4D417E9F87FB406F7BF1 /* Pods-RevanFunction_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevanFunction_Example.release.xcconfig"; path = "Target Support Files/Pods-RevanFunction_Example/Pods-RevanFunction_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D924C88FD4B970E66F72A3E1 /* Pods_RevanFunction_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevanFunction_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2F254F6A611C4B06322735A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		E851AF05B608375FDC1F1FC2 /* RevanFunction.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RevanFunction.podspec; path = ../RevanFunction.podspec; sourceTree = "<group>"; };
+		E2F254F6A611C4B06322735A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E851AF05B608375FDC1F1FC2 /* RevanFunction.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RevanFunction.podspec; path = ../RevanFunction.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED7CE3C5A1FED6C9DD81D5A3 /* Pods-RevanFunction_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevanFunction_Example.debug.xcconfig"; path = "Target Support Files/Pods-RevanFunction_Example/Pods-RevanFunction_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA518DE2F52FAF0986E78B12 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA518DE2F52FAF0986E78B12 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				9F33C3B69D0EDC02E40927AF /* Pods-RevanFunction_Tests.debug.xcconfig */,
 				72C3B98CE0D5804ECB417A11 /* Pods-RevanFunction_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

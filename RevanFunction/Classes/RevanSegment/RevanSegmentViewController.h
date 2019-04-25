@@ -1,6 +1,6 @@
 //
 //  RevanSegmentViewController.h
-//  RevanFunctionModule_Example
+//  RevanFunction_Example
 //
 //  Created by 紫荆秋雪 on 2017/12/26.
 //  Copyright © 2017年 Revan. All rights reserved.

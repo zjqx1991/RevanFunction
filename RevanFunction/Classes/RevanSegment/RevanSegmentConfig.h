@@ -1,6 +1,6 @@
 //
 //  RevanSegmentConfig.h
-//  Pods-RevanFunctionModule_Example
+//  Pods-RevanFunction_Example
 //
 //  Created by 紫荆秋雪 on 2018/1/1.
 //

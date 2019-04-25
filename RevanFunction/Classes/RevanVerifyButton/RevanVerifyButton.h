@@ -1,6 +1,6 @@
 //
 //  RevanVerifyButton.h
-//  RevanFunctionModule
+//  RevanFunction
 //
 //  Created by RevanWang on 2018/8/27.
 //
