@@ -1,0 +1,22 @@
+{
+  "name": "RevanFunction",
+  "version": "0.1.0",
+  "summary": "A short description of RevanFunction.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/RevanWang/RevanFunction",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "RevanWang": "zjqx1991@163.com"
+  },
+  "source": {
+    "git": "https://github.com/RevanWang/RevanFunction.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RevanFunction/Classes/**/*"
+}
