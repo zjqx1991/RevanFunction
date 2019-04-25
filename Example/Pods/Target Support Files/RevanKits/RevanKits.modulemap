@@ -1,0 +1,6 @@
+framework module RevanKits {
+  umbrella header "RevanKits-umbrella.h"
+
+  export *
+  module * { export * }
+}

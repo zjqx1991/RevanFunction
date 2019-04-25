@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-RevanFunctionModule功能模块
+RevanFunction功能模块
                        DESC
 
   s.homepage         = 'https://github.com/zjqx1991/RevanFunction'
@@ -36,55 +36,55 @@ RevanFunctionModule功能模块
     #源码
     #选项卡
     s.subspec 'RevanSegment' do |segment|
-    segment.source_files = 'RevanFunctionModule/Classes/RevanSegment/**/*'
+    segment.source_files = 'RevanFunction/Classes/RevanSegment/**/*'
     end
     #下载器
     s.subspec 'RevanDownLoader' do |downLoader|
-    downLoader.source_files = 'RevanFunctionModule/Classes/RevanDownLoader/**/*'
+    downLoader.source_files = 'RevanFunction/Classes/RevanDownLoader/**/*'
     end
     #播放器
     s.subspec 'RevanPlayer' do |player|
-    player.source_files = 'RevanFunctionModule/Classes/RevanPlayer/**/*'
+    player.source_files = 'RevanFunction/Classes/RevanPlayer/**/*'
     end
 
     #封装数据库
     s.subspec 'RevanDB' do |revanDB|
-    revanDB.source_files = 'RevanFunctionModule/Classes/RevanDB/**/*'
+    revanDB.source_files = 'RevanFunction/Classes/RevanDB/**/*'
     end
 
     #消息提示框
     s.subspec 'RevanTipsView' do |tipsView|
-    tipsView.source_files = 'RevanFunctionModule/Classes/RevanTipsView/**/*.{h,m}'
+    tipsView.source_files = 'RevanFunction/Classes/RevanTipsView/**/*.{h,m}'
     tipsView.resource_bundles = {
-    'RevanTipsView' => ['RevanFunctionModule/Classes/RevanTipsView/**/*.xib']
+    'RevanTipsView' => ['RevanFunction/Classes/RevanTipsView/**/*.xib']
     }
     tipsView.dependency 'SVProgressHUD', '~> 2.2.5'
-    tipsView.dependency 'RevanBaseModule/Category'
+    tipsView.dependency 'RevanKits/Category'
     end
 
     #二维码
     s.subspec 'RevanQRCode' do |qrCode|
-    qrCode.source_files = 'RevanFunctionModule/Classes/RevanQRCode/**/*.{h,m}'
+    qrCode.source_files = 'RevanFunction/Classes/RevanQRCode/**/*.{h,m}'
     qrCode.resource_bundles = {
-    'RevanQRCode' => ['RevanFunctionModule/Assets/RevanQRCode/**/*.xcassets', 'RevanFunctionModule/Assets/RevanQRCode/**/*.caf']
+    'RevanQRCode' => ['RevanFunction/Assets/RevanQRCode/**/*.xcassets', 'RevanFunction/Assets/RevanQRCode/**/*.caf']
     }
-    qrCode.dependency 'RevanBaseModule/Category'
+    qrCode.dependency 'RevanKits/Category'
     end
 
     #倒计时
     s.subspec 'RevanCountDown' do |countDown|
-    countDown.source_files = 'RevanFunctionModule/Classes/RevanCountDown/**/*.{h,m}'
+    countDown.source_files = 'RevanFunction/Classes/RevanCountDown/**/*.{h,m}'
     end
 
     #倒计时按钮
     s.subspec 'RevanVerifyButton' do |verifyBtn|
-    verifyBtn.source_files = 'RevanFunctionModule/Classes/RevanVerifyButton/**/*.{h,m}'
-    verifyBtn.dependency 'RevanFunctionModule/RevanCountDown'
+    verifyBtn.source_files = 'RevanFunction/Classes/RevanVerifyButton/**/*.{h,m}'
+    verifyBtn.dependency 'RevanFunction/RevanCountDown'
     end
 
     #截屏
     s.subspec 'RevanSnapshot' do |snapshot|
-    snapshot.source_files = 'RevanFunctionModule/Classes/RevanSnapshot/**/*.{h,m}'
+    snapshot.source_files = 'RevanFunction/Classes/RevanSnapshot/**/*.{h,m}'
     end
 
 
@@ -92,28 +92,28 @@ RevanFunctionModule功能模块
     #二进制
     #选项卡
     #s.subspec 'RevanSegment' do |segment|
-    #    segment.source_files = 'RevanFunctionModule/Classes/RevanSegment/**/*.h'
-    #    segment.vendored_frameworks = 'RevanFunctionModule/Products/Release-iphonesimulator/RevanSegmentFramework.framework'
+    #    segment.source_files = 'RevanFunction/Classes/RevanSegment/**/*.h'
+    #    segment.vendored_frameworks = 'RevanFunction/Products/Release-iphonesimulator/RevanSegmentFramework.framework'
     #end
     #下载器
     #s.subspec 'RevanDownLoader' do |downLoader|
-    #    downLoader.source_files = 'RevanFunctionModule/Classes/RevanDownLoader/**/*.h'
-    #    downLoader.vendored_frameworks = 'RevanFunctionModule/Products/Release-iphonesimulator/RevanDownLoaderFramework.framework'
+    #    downLoader.source_files = 'RevanFunction/Classes/RevanDownLoader/**/*.h'
+    #    downLoader.vendored_frameworks = 'RevanFunction/Products/Release-iphonesimulator/RevanDownLoaderFramework.framework'
     #end
     #播放器
     #s.subspec 'RevanPlayer' do |player|
-    #    player.source_files = 'RevanFunctionModule/Classes/RevanPlayer/**/*.h'
-    #    player.vendored_frameworks = 'RevanFunctionModule/Products/Release-iphonesimulator/RevanPlayerFramework.framework'
+    #    player.source_files = 'RevanFunction/Classes/RevanPlayer/**/*.h'
+    #    player.vendored_frameworks = 'RevanFunction/Products/Release-iphonesimulator/RevanPlayerFramework.framework'
     #end
 
     #封装数据库
     #s.subspec 'RevanDB' do |revanDB|
-    #    revanDB.source_files = 'RevanFunctionModule/Classes/RevanDB/**/*.h'
-    #    revanDB.vendored_frameworks = 'RevanFunctionModule/Products/Release-iphonesimulator/RevanDBFramework.framework'
+    #    revanDB.source_files = 'RevanFunction/Classes/RevanDB/**/*.h'
+    #    revanDB.vendored_frameworks = 'RevanFunction/Products/Release-iphonesimulator/RevanDBFramework.framework'
     #end
     #end
     # s.resource_bundles = {
-    #   'RevanFunctionModule' => ['RevanFunctionModule/Assets/*.png']
+    #   'RevanFunction' => ['RevanFunction/Assets/*.png']
     # }
 
     # s.public_header_files = 'Pod/Classes/**/*.h'
