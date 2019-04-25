@@ -61,7 +61,7 @@
   push_git_tags
 
   #8、pod repo push XXXX xxx.podspec
-  pod_push(path: "#{targetName}.podspec", repo: "Specs", verbose: true, use_libraries: true, allow_warnings: true)
-
+  pod_push(path: "#{targetName}.podspec", verbose: true, use_libraries: true, allow_warnings: true)
+# pod_push(path: "#{targetName}.podspec", repo: "Specs", verbose: true, use_libraries: true, allow_warnings: true)
   end
 
