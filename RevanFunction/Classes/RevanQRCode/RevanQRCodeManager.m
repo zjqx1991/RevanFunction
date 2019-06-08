@@ -85,7 +85,7 @@
             [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {
                 if (granted) {
                     dispatch_sync(dispatch_get_main_queue(), ^{
-                        [superVC.navigationController pushViewController:self.qrCodeScanVC animated:YES];
+                        [superVC presentViewController:self.qrCodeScanVC animated:YES completion:nil];
                     });
                     // 用户第一次同意了访问相机权限
                     NSLog(@"用户第一次同意了访问相机权限 - - %@", [NSThread currentThread]);
@@ -99,7 +99,7 @@
         }
         else if (status == AVAuthorizationStatusAuthorized) { // 用户允许当前应用访问相机
             dispatch_async(dispatch_get_main_queue(), ^{
-                [superVC.navigationController pushViewController:self.qrCodeScanVC animated:YES];
+                [superVC presentViewController:self.qrCodeScanVC animated:YES completion:nil];
             });
         }
         else if (status == AVAuthorizationStatusDenied) { // 用户拒绝当前应用访问相机

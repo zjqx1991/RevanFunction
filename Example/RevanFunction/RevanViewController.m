@@ -7,6 +7,7 @@
 //
 
 #import "RevanViewController.h"
+#import "RevanQRCodeManager.h"
 
 @interface RevanViewController ()
 
@@ -25,5 +26,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)onClickQr:(id)sender {
+    [kRevanQRCodeManager revan_qrcodeScanVC:self];
+}
+    
 @end
