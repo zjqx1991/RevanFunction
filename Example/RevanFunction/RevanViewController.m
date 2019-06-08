@@ -28,6 +28,9 @@
 }
 - (IBAction)onClickQr:(id)sender {
     [kRevanQRCodeManager revan_qrcodeScanVC:self];
+    kRevanQRCodeManager.completeBlock = ^(NSString *result) {
+        NSLog(@"二维码内容：%@", result);
+    };
 }
     
 @end

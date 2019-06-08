@@ -18,6 +18,9 @@
 @property (nonatomic, strong) UILabel *promptLabel;
 @property (nonatomic, strong) UIView *bottomView;
 @property (nonatomic, assign) BOOL isSelectedFlashlightBtn;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIButton *closeBtn;
+@property (nonatomic, strong) UIButton *photoBtn;
 @end
 
 @implementation RevanQRCodeScanViewController
@@ -57,8 +60,9 @@
 }
 
 - (void)setupNavigationBar {
-    self.navigationItem.title = @"扫一扫";
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:(UIBarButtonItemStyleDone) target:self action:@selector(rightBarButtonItenAction)];
+    [self.view addSubview:self.titleLabel];
+    [self.view addSubview:self.closeBtn];
+    [self.view addSubview:self.photoBtn];
 }
 
 
@@ -92,8 +96,9 @@
  取消从相册中获取图片
  */
 - (void)cancelQRCodePhotoManager:(RevanQRCodePhotoManager *)photoManager {
-    [self.view addSubview:self.scanningView];
-    NSLog(@"");
+    if (self.scanningView.superview == nil) {
+        [self.view addSubview:self.scanningView];
+    }
 }
 
 /**
@@ -145,7 +150,11 @@
     if (self.completeBlock) {
         self.completeBlock(urlstr);
     }
-    [self.navigationController popViewControllerAnimated:NO];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)onClickCloseBtn {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - - - 闪光灯按钮
@@ -220,6 +229,38 @@
         _bottomView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
     }
     return _bottomView;
+}
+
+- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, self.view.bounds.size.width, 40)];
+        _titleLabel.text = @"Scan";
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.textColor = [UIColor whiteColor];
+    }
+    return _titleLabel;
+}
+
+- (UIButton *)closeBtn {
+    if (!_closeBtn) {
+        _closeBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+        _closeBtn.frame = CGRectMake(20, 20, 30, 30);
+        [_closeBtn setImage:[UIImage revan_assetImageName:@"close" inDirectoryBundleName:@"RevanQRCode" commandClass:[self class]] forState:UIControlStateNormal];
+        [_closeBtn addTarget:self action:@selector(onClickCloseBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _closeBtn;
+}
+
+
+- (UIButton *)photoBtn {
+    if (!_photoBtn) {
+        _photoBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+        _photoBtn.frame = CGRectMake(self.view.bounds.size.width - 80, 20, 80, 30);
+        [_photoBtn setTitle:@"photo" forState:UIControlStateNormal];
+        [_photoBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_photoBtn addTarget:self action:@selector(rightBarButtonItenAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _photoBtn;
 }
 
 @end

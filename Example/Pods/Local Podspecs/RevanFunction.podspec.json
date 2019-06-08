@@ -1,6 +1,6 @@
 {
   "name": "RevanFunction",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "A short description of RevanFunction.",
   "description": "RevanFunction功能模块",
   "homepage": "https://github.com/zjqx1991/RevanFunction",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zjqx1991/RevanFunction.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"
