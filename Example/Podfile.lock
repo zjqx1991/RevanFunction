@@ -1,26 +1,26 @@
 PODS:
-  - RevanFunction (0.1.5):
-    - RevanFunction/RevanCountDown (= 0.1.5)
-    - RevanFunction/RevanDB (= 0.1.5)
-    - RevanFunction/RevanDownLoader (= 0.1.5)
-    - RevanFunction/RevanPlayer (= 0.1.5)
-    - RevanFunction/RevanQRCode (= 0.1.5)
-    - RevanFunction/RevanSegment (= 0.1.5)
-    - RevanFunction/RevanSnapshot (= 0.1.5)
-    - RevanFunction/RevanTipsView (= 0.1.5)
-    - RevanFunction/RevanVerifyButton (= 0.1.5)
-  - RevanFunction/RevanCountDown (0.1.5)
-  - RevanFunction/RevanDB (0.1.5)
-  - RevanFunction/RevanDownLoader (0.1.5)
-  - RevanFunction/RevanPlayer (0.1.5)
-  - RevanFunction/RevanQRCode (0.1.5):
+  - RevanFunction (0.1.6):
+    - RevanFunction/RevanCountDown (= 0.1.6)
+    - RevanFunction/RevanDB (= 0.1.6)
+    - RevanFunction/RevanDownLoader (= 0.1.6)
+    - RevanFunction/RevanPlayer (= 0.1.6)
+    - RevanFunction/RevanQRCode (= 0.1.6)
+    - RevanFunction/RevanSegment (= 0.1.6)
+    - RevanFunction/RevanSnapshot (= 0.1.6)
+    - RevanFunction/RevanTipsView (= 0.1.6)
+    - RevanFunction/RevanVerifyButton (= 0.1.6)
+  - RevanFunction/RevanCountDown (0.1.6)
+  - RevanFunction/RevanDB (0.1.6)
+  - RevanFunction/RevanDownLoader (0.1.6)
+  - RevanFunction/RevanPlayer (0.1.6)
+  - RevanFunction/RevanQRCode (0.1.6):
     - RevanKits/Category
-  - RevanFunction/RevanSegment (0.1.5)
-  - RevanFunction/RevanSnapshot (0.1.5)
-  - RevanFunction/RevanTipsView (0.1.5):
+  - RevanFunction/RevanSegment (0.1.6)
+  - RevanFunction/RevanSnapshot (0.1.6)
+  - RevanFunction/RevanTipsView (0.1.6):
     - RevanKits/Category
     - SVProgressHUD (~> 2.2.5)
-  - RevanFunction/RevanVerifyButton (0.1.5):
+  - RevanFunction/RevanVerifyButton (0.1.6):
     - RevanFunction/RevanCountDown
   - RevanKits/Category (2.0.8)
   - SVProgressHUD (2.2.5)
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RevanFunction: 92d5bfe69809d983bf8288835a1ed1e919983a04
+  RevanFunction: 5a548518d79dd5beda2f017823f861e4f9a672a6
   RevanKits: 462dfb24c9b32ea424365c4b55a370e1f530432d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
